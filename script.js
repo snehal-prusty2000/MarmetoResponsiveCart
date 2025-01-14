@@ -30,6 +30,26 @@ fetch("https://cdn.shopify.com/s/files/1/0883/2188/4479/files/apiCartData.json?v
 })
 .catch(error => console.error("Error fetching cart data:", error));
 
+function updateQuantity(itemId, input) {
+  const quantity = parseInt(input.value);
+  if (quantity < 1) return; 
+
+  const item = data.find(item => item.id === itemId);
+  const subtotal = item.price * quantity;
+  document.getElementById(`subtotal-${itemId}`).textContent = subtotal.toFixed(2);
+
+  item.quantity = quantity; 
+  updateTotal();
+}
+
+function updateTotal() {
+  const total = data.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  document.getElementById("cart-total").textContent = `₹${total.toFixed(2)}`;
+}
+
 function removeItem(itemId) {
 alert(`Remove item with ID: ${itemId}`);
 }
+
+localStorage.setItem("cartData", JSON.stringify(data));
+const savedData = JSON.parse(localStorage.getItem("cartData")) || [];
