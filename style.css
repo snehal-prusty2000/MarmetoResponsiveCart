@@ -1,0 +1,260 @@
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:300");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right bottom, #873572, black);
+}
+a {
+  display: inline-block;
+  color: lightgrey;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.23);
+  color: white;
+  transform: scale(1.03);
+  text-decoration: none;
+}
+a:active {
+  transform: scale(0.98);
+}
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  /* background-color: #c3d1e0; */
+  color: black;
+}
+
+.header .middle {
+  /* background-color: pink; */
+  width: 30%;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header .nav a {
+  color: rgb(4, 4, 4);
+  /* margin-left: auto; */
+  display: inline-block;
+  text-decoration: none;
+  /* background-color: blue; */
+}
+
+.header .cart {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 30px;
+}
+
+.backgroundtop {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/035/093/911/non_2x/you-can-use-the-blurred-focus-of-a-white-open-space-office-interior-as-a-background-with-wooden-table-free-photo.jpg");
+  height: 40vh;
+  width: 100%;
+  background-position: center;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.backgroundtop .entity{
+       height: 45%;
+       /* background-color: pink; */
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+}
+.backgroundtop .entity>h1{
+  font-size: 32px;
+}
+.cart-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+table{
+  /* background-color: #666; */
+  width: 55vw;
+}
+thead{
+  background-color: antiquewhite;
+}
+h1 {
+  text-align: center;
+}
+
+
+.loader {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.product_details{
+  width: 70%;
+  /* background-color: red; */
+}
+.product_details tr{
+  display: flex;
+  /* background-color: beige; */
+  gap: 10%;
+ 
+}
+.product_details th,td{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.cart-totals {
+  /* flex: 1; */
+  padding: 20px;
+  background-color:  antiquewhite;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.cart-totals p {
+  margin: 10px 0;
+}
+
+.cart-totals button {
+  width: 100%;
+  padding: 10px;
+  /* background-color: #007bff; */
+  /* color: white; */
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.footer {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: antiquewhite;
+  border-top: 2px solid #e0e0e0;
+}
+
+.footer-item {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.footer-item:last-child {
+  border-right: none;
+}
+
+.footer-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-item strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.footer-item img {
+  margin-bottom: 10px;
+  width: 40px;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-item {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+  }
+
+  .footer-item:last-child {
+    border-bottom: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cart-layout {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .cart-table th, .cart-table td {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+
+  .header .cart {
+    font-size: 1em;
+  }
+
+  .cart-totals {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  #checkout-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>L2 <> Responsive Cart Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <!-- <div class="container">
+        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    </div> -->
+    <!-- Happy coding 😊 -->
+    <!-- <script src="./script.js"></script> -->
+    <body>
+        <!-- Header  -->
+        <header class="header">
+            <div class="logo"><span><img src="https://marmeto.com/cdn/shop/files/re-black-logo.png?v=1716890348&width=500" alt="marmito logo" height="40px" width="150px"></span></div>
+            <div class="middle">
+                <nav class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+           <div class="cart">
+            <div><i class="fas fa-search"></i></div>
+            <div><i class="fa-regular fa-heart"></i></div>
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+           </div>
+        </header>
+
+        <section>
+            <div class="backgroundtop">
+                <div class="entity">
+                  <div><img src="https://media.licdn.com/dms/image/v2/C4D0BAQHkIpRPUew_1g/company-logo_200_200/company-logo_200_200/0/1630574233310/marmeto_logo?e=2147483647&v=beta&t=xMOiyijolXyb3lkwgcjYA0tIEG7b4Sd4PCXQoNkK-mA" alt="" height="30px"></div>
+                  <h1>Cart</h1>
+                  <p>Home > Cart</p>
+                </div>
+            </div>
+        </section>
+    
+            <!-- Cart -->
+        <div class="cart-container">
+            <div class="product_details">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                       
+                        <!-- <tr>
+                            <td colspan="2"><img src="" alt="" height="50px" width="50px"></td>
+                            <td>Product</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Subtotal</td>
+                            <td><i class="fa-solid fa-trash"></i></td>
+                       </tr> -->
+                    </tbody>
+                </table>
+           
+            </div>
+            
+    
+                <!-- Cart Totals Section -->
+                <div class="cart-totals">
+                    <h2>Cart Totals</h2>
+                    <p><strong>Subtotal:</strong> <span id="subtotal-price">₹0.00</span></p>
+                    <p><strong>Total:</strong> <span id="total-price">₹0.00</span></p>
+                    <button id="checkout-btn">Check Out</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-item">
+                <p><strong>High Quality</strong></p>
+                <p>Crafted from top materials</p>
+            </div>
+            <div class="footer-item">
+                <p><strong>Warranty Protection</strong></p>
+                <p>Over 2 years</p>
+            </div>
+            <div class="footer-item">
+                <p><strong>Free Shipping</strong></p>
+                <p>Order over ₹150</p>
+            </div>
+            <div class="footer-item">
+                <p><strong>24/7 Support</strong></p>
+                <p>Dedicated support</p>
+            </div>
+        </footer>
+    
+        <script src="script.js"></script>
+    </body>
+</body>
+
+</html>
